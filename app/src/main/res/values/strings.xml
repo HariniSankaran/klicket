@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">civil</string>
+
+    <string name="title_activity_fullscreen">FullscreenActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="login_activity">Login</string>
+    <string name="title_activity_newpage">newpage</string>
+</resources>
