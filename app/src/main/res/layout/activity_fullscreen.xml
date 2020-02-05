@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#0099cc"
+    android:background="#F0D806"
     tools:context=".FullscreenActivity">
 
     <!-- The primary full-screen view. This can be replaced with whatever view
@@ -36,15 +36,15 @@
             android:id="@+id/imageView"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:layout_marginBottom="310dp"
-            app:layout_constraintBottom_toTopOf="@+id/fullscreen_content_controls"
-            app:layout_constraintStart_toStartOf="@+id/fullscreen_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:srcCompat="@drawable/logo" />
 
         <TextView
             android:id="@+id/fullscreen_content"
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="0dp"
             android:gravity="center"
             android:keepScreenOn="true"
@@ -52,7 +52,6 @@
             android:textColor="#33b5e5"
             android:textSize="50sp"
             android:textStyle="bold"
-            android:paddingLeft="200dp"
             app:layout_constraintBottom_toTopOf="@+id/fullscreen_content_controls"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="1.0"

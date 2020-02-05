@@ -19,11 +19,8 @@ private ImageButton submit_btn;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_newpage);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-
-        submit_btn=(ImageButton)findViewById(R.id.)
-
-
+        //setSupportActionBar(toolbar);
+        setTitle("Project");
     }
+
 }
