@@ -1,60 +1,91 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
+    android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".newprojectdetail">
 
-    <LinearLayout
-        android:id="@+id/linearLayout3"
-        android:layout_width="409dp"
+    <TextView
+        android:id="@+id/et_new"
+        android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginBottom="680dp"
-        android:orientation="vertical"
-        android:background="	#c90066"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <TextView
-            android:id="@+id/et_new"
-            android:layout_width="399dp"
-            android:layout_height="wrap_content"
-            android:layout_marginHorizontal="10dp"
-            android:layout_marginTop="2.5dp"
-            android:text="New Project"
-            android:textColor="	#fffafa"
-            android:textSize="30dp" />
-    </LinearLayout>
+        android:text="New Project"
+        android:textColor="	#fffafa"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:background="#f50057"/>
 
     <LinearLayout
-        android:layout_width="407dp"
-        android:layout_height="678dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_marginTop="1dp"
+        android:layout_weight="30"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+        android:background="#eeeeee">
 
-        <com.google.android.material.textfield.TextInputLayout
+        <EditText
+            android:id="@+id/et_ownername"
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Owner Name"
+            android:inputType="textPersonName"
+            android:textSize="25dp" />
 
+        <EditText
+            android:id="@+id/et_sitelocation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Site Location"
+            android:inputType="textPostalAddress"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et_owneremail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email id"
+            android:inputType="textEmailAddress"
+            android:textSize="25dp" />
+
+        <EditText
+            android:id="@+id/et_ownernumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Owner Mobile Number"
+            android:inputType="phone"
+            android:textSize="25dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
             <EditText
-                android:id="@+id/et_ownername"
-                android:layout_width="409dp"
-                android:layout_height="50dp"
-                android:layout_marginBottom="628dp"
-                android:layout_weight="1"
+                android:id="@+id/et_area"
+                android:layout_weight="2"
+                android:layout_height="wrap_content"
                 android:ems="10"
-                android:hint="Owner Name"
-                android:inputType="textPersonName"
+                android:hint="Area of Plot"
+                android:inputType="numberDecimal"
                 android:textSize="25dp" />
-
-        </com.google.android.material.textfield.TextInputLayout>
-
+            <EditText
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:hint="Unit"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="325dp"
+            android:layout_gravity="center"
+            android:text="Next"
+            android:textSize="25dp"
+            android:background="#ff5983"/>
     </LinearLayout>
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

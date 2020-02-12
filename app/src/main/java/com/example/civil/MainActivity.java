@@ -20,9 +20,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        submit_btn = (ImageButton) findViewById(R.id.btn_Submit);
         username_et= (EditText)findViewById(R.id.et_UserName);
         password_et=(EditText)findViewById(R.id.et_Password);
+        submit_btn= (Button)findViewById(R.id.btn_Submit);
         submit_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
