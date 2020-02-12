@@ -30,15 +30,16 @@
         android:id="@+id/btn_newproject"
         android:layout_width="410dp"
         android:layout_height="73dp"
+        android:background="#00227b"
+        android:textColor="#fffdd0"
         android:text="New Project"
         android:textSize="25dp"
-        android:background="#ff5983"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="0.998" />
 
     <LinearLayout
         android:id="@+id/linearLayout2"
@@ -48,7 +49,7 @@
         android:layout_marginRight="409dp"
         android:orientation="vertical"
         android:visibility="visible"
-        android:background="#f50057"
+        android:background="#002171"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -57,11 +58,11 @@
 
         <TextView
             android:id="@+id/et_projects"
-            android:layout_width="172dp"
+            android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:layout_marginHorizontal="10dp"
+            android:layout_gravity="center"
             android:text="Projects"
-            android:textColor="	#fffafa"
+            android:textColor="#fffdd0"
             android:textSize="30dp" />
     </LinearLayout>
 

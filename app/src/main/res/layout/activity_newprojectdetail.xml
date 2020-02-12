@@ -12,10 +12,10 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:text="New Project"
-        android:textColor="	#fffafa"
+        android:textColor="#fffdd0"
         android:textAlignment="center"
         android:textSize="30dp"
-        android:background="#f50057"/>
+        android:background="#002171"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -32,7 +32,8 @@
             android:ems="10"
             android:hint="Owner Name"
             android:inputType="textPersonName"
-            android:textSize="25dp" />
+            android:textSize="25dp"
+            android:textColorHint="#1a237e"/>
 
         <EditText
             android:id="@+id/et_sitelocation"
@@ -41,7 +42,8 @@
             android:ems="10"
             android:hint="Site Location"
             android:inputType="textPostalAddress"
-            android:textSize="25dp" />
+            android:textSize="25dp"
+            android:textColorHint="#1a237e"/>
 
         <EditText
             android:id="@+id/et_owneremail"
@@ -50,7 +52,8 @@
             android:ems="10"
             android:hint="Email id"
             android:inputType="textEmailAddress"
-            android:textSize="25dp" />
+            android:textSize="25dp"
+            android:textColorHint="#1a237e"/>
 
         <EditText
             android:id="@+id/et_ownernumber"
@@ -59,24 +62,29 @@
             android:ems="10"
             android:hint="Owner Mobile Number"
             android:inputType="phone"
-            android:textSize="25dp" />
+            android:textSize="25dp"
+            android:textColorHint="#1a237e"/>
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <EditText
                 android:id="@+id/et_area"
-                android:layout_weight="2"
                 android:layout_height="wrap_content"
+                android:layout_weight="2"
                 android:ems="10"
                 android:hint="Area of Plot"
                 android:inputType="numberDecimal"
-                android:textSize="25dp" />
-            <EditText
-                android:layout_weight="1"
-                android:layout_height="wrap_content"
                 android:textSize="25dp"
-                android:hint="Unit"/>
+                android:textColorHint="#1a237e"/>
+
+            <EditText
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Unit"
+                android:textSize="25dp"
+                android:textColorHint="#1a237e"/>
         </LinearLayout>
         <Button
             android:layout_width="180dp"
@@ -85,7 +93,8 @@
             android:layout_gravity="center"
             android:text="Next"
             android:textSize="25dp"
-            android:background="#ff5983"/>
+            android:background="#00227b"
+            android:textColor="#fffdd0"/>
     </LinearLayout>
 
 </LinearLayout>
