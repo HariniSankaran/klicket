@@ -128,7 +128,7 @@
                     android:layout_margin="1dp"
                     android:background="#A29F9F"
                     android:gravity="center"
-                    android:text="MASON"
+                    android:text="SUPERVISIOR"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
 
                 <EditText
@@ -428,7 +428,7 @@
                     android:layout_margin="1dp"
                     android:background="#FFFFFF"
                     android:gravity="center"
-                    android:hint="Sum Total "
+                    android:hint="total"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
             </TableRow>
 

@@ -31,7 +31,11 @@
 
         <ListView
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent" >
+
+        </ListView>
+
+
     </LinearLayout>
 
     <LinearLayout
@@ -47,5 +51,6 @@
             android:textColor="#fffdd0"
             android:textSize="35dp"
             android:layout_marginTop="7dp"></TextView>
+
     </LinearLayout>
 </LinearLayout>

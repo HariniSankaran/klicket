@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".materialreport"></activity>
+        <activity android:name=".demo"></activity>
+        <activity android:name=".report2" />
         <activity android:name=".schedule" />
         <activity android:name=".report" />
         <activity android:name=".fullscreen" />
