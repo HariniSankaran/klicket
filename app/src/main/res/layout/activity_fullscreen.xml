@@ -10,17 +10,16 @@
 
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imageView2"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="386dp"
         android:layout_marginTop="100dp"
-        android:src="@drawable/logoapp" />
+        android:src="@drawable/appfinal" />
 
-    <TextView
+    <ImageView
+        android:id="@+id/imageView7"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Klicket"
-        android:textAlignment="center"
-        android:textSize="40dp"
-        android:textColor="#fffdd0"></TextView>
+        android:src="@drawable/nameicon" />
+
 </LinearLayout>

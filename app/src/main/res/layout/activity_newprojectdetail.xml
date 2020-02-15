@@ -78,14 +78,16 @@
                 android:hint="Area of Plot"
                 android:inputType="numberDecimal"
                 android:textColorHint="#1a237e"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:layout_width="0dp" />
 
             <EditText
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:hint="Unit"
                 android:textColorHint="#1a237e"
-                android:textSize="20dp" />
+                android:textSize="20dp"
+                android:layout_width="0dp" />
 
         </LinearLayout>
 

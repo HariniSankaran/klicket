@@ -9,8 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".finishproject"></activity>
+        <activity android:name=".onclickviewreport" />
+        <activity android:name=".viewreport" />
         <activity android:name=".reportsubmit" />
-        <activity android:name=".demo" />
         <activity android:name=".report2" />
         <activity android:name=".schedule" />
         <activity android:name=".report" />

@@ -48,6 +48,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="358dp"
+        android:background="#ebebeb"
         android:orientation="vertical">
 
         <TextView
@@ -74,6 +75,7 @@
             android:ems="10"
             android:gravity="start|top"
             android:hint="Plan for next day"
+            android:textColorHint="#1a237e"
             android:inputType="textMultiLine" />
 
         <TextView
