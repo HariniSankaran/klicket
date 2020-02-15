@@ -8,24 +8,19 @@
     android:orientation="vertical"
     tools:context=".fullscreen">
 
+
     <ImageView
-        android:id="@+id/logo"
-        android:layout_width="411dp"
-        android:layout_height="680dp"
-        android:layout_gravity="center"
-        android:layout_weight="1"
-        android:src="@drawable/finallogo" />
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/logoapp" />
 
     <TextView
-        android:id="@+id/et_title"
         android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:layout_weight="1"
-        android:text="KLICKET"
+        android:layout_height="wrap_content"
+        android:text="Klicket"
         android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textColor="#fffdd0"
-        android:textSize="50dp"
-        android:textStyle="bold|italic" />
-
+        android:textSize="40dp"
+        android:textColor="#fffdd0"></TextView>
 </LinearLayout>

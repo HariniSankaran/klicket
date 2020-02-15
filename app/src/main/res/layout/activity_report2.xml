@@ -17,7 +17,7 @@
             android:id="@+id/et_report"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="Reports"
+            android:text="Report"
             android:textSize="35dp"
             android:textColor="#fffdd0"
             android:textAlignment="center" />
