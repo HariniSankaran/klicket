@@ -1,5 +1,6 @@
 package com.example.civil;
 
+import android.database.sqlite.SQLiteDatabase;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -14,6 +15,7 @@ import android.widget.Toast;
 
 public class newpage extends AppCompatActivity {
 private ImageButton submit_btn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

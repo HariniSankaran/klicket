@@ -76,6 +76,7 @@
             android:gravity="start|top"
             android:hint="Plan for next day"
             android:textColorHint="#1a237e"
+            android:textSize="25dp"
             android:inputType="textMultiLine" />
 
         <TextView
