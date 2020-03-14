@@ -1,132 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="#eeeeee"
-    tools:context=".newprojectdetail">
+    android:orientation="vertical"
+    tools:context=".NewProjectDetail">
 
     <TextView
         android:id="@+id/et_new"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:background="@drawable/light_blue_gradient"
         android:text="New Project"
-        android:textColor="#fffdd0"
         android:textAlignment="center"
+        android:textColor="#fffdd0"
         android:textSize="30dp"
-        android:background="#002171"/>
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
+    <EditText
+        android:id="@+id/et_ownername"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="1dp"
-        android:background="#eeeeee"
-        android:orientation="vertical">
+        android:ems="10"
+        android:hint="Owner Name"
+        android:inputType="textPersonName"
+        android:textColorHint="#1a237e"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/et_new" />
 
-        <EditText
-            android:id="@+id/et_ownername"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Owner Name"
-            android:inputType="textPersonName"
-            android:textColorHint="#1a237e"
-            android:textSize="20dp" />
+    <EditText
+        android:id="@+id/et_sitelocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Site Location"
+        android:inputType="textPostalAddress"
+        android:textColorHint="#1a237e"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/et_ownername" />
 
-        <EditText
-            android:id="@+id/et_sitelocation"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Site Location"
-            android:inputType="textPostalAddress"
-            android:textColorHint="#1a237e"
-            android:textSize="20dp" />
+    <EditText
+        android:id="@+id/et_owneremail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Email id"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#1a237e"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/et_sitelocation" />
 
-        <EditText
-            android:id="@+id/et_owneremail"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Email id"
-            android:inputType="textEmailAddress"
-            android:textColorHint="#1a237e"
-            android:textSize="20dp" />
+    <EditText
+        android:id="@+id/et_ownernumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Owner Mobile Number"
+        android:inputType="phone"
+        android:textColorHint="#1a237e"
+        android:textSize="20dp"
+        app:layout_constraintTop_toBottomOf="@id/et_owneremail" />
 
-        <EditText
-            android:id="@+id/et_ownernumber"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="Owner Mobile Number"
-            android:inputType="phone"
-            android:textColorHint="#1a237e"
-            android:textSize="20dp" />
+    <EditText
+        android:id="@+id/et_area"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Area of Plot"
+        android:inputType="numberDecimal"
+        android:textColorHint="#1a237e"
+        android:textSize="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/et_ownernumber" />
 
+    <EditText
+        android:id="@+id/et_unit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="7"
+        android:hint="Unit"
+        android:textColorHint="#1a237e"
+        android:textSize="20dp"
+        app:layout_constraintStart_toEndOf="@id/et_area"
+        app:layout_constraintTop_toBottomOf="@id/et_ownernumber" />
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+    <Button
+        android:id="@+id/nextButton"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:background="#00227b"
+        android:text="Next"
+        android:textColor="#fffdd0"
+        android:textSize="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-            <EditText
-                android:id="@+id/et_area"
-                android:layout_height="wrap_content"
-                android:layout_weight="2"
-                android:ems="10"
-                android:hint="Area of Plot"
-                android:inputType="numberDecimal"
-                android:textColorHint="#1a237e"
-                android:textSize="20dp"
-                android:layout_width="0dp" />
+    <TextView
+        android:id="@+id/uploadText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:layout_weight="1"
+        android:text="Upload plan here"
+        android:textAlignment="center"
+        android:textColor="#1a237e"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@id/nextButton" />
 
-            <EditText
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:hint="Unit"
-                android:textColorHint="#1a237e"
-                android:textSize="20dp"
-                android:layout_width="0dp" />
+    <ImageView
+        android:id="@+id/pdfIcon"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/et_area"
+        app:layout_constraintBottom_toTopOf="@id/uploadText"
+        app:srcCompat="@drawable/pdf" />
 
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="375dp"
-            android:layout_gravity="center"
-            android:orientation="vertical"
-            android:background="@drawable/border">
-
-            <ImageView
-                android:id="@+id/imageView3"
-                android:layout_width="match_parent"
-                android:layout_height="200dp"
-                android:layout_marginTop="80dp"
-                android:layout_weight="1"
-                app:srcCompat="@drawable/pdf" />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:text="Upload plan here"
-                android:textAlignment="center"
-                android:textColor="#1a237e"
-                android:layout_marginBottom="15dp"
-                android:textSize="30dp" />
-        </LinearLayout>
-
-    </LinearLayout>
-
-        <Button
-            android:layout_width="180dp"
-            android:layout_height="60dp"
-            android:layout_gravity="center"
-            android:background="#00227b"
-            android:text="Next"
-            android:textColor="#fffdd0"
-            android:textSize="25dp" />
-
-</LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

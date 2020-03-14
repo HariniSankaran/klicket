@@ -6,4 +6,5 @@
     <string name="dummy_content">DUMMY\nCONTENT</string>
     <string name="login_activity">Login</string>
     <string name="title_activity_newpage">newpage</string>
+    <string name="select_date">Select a Date</string>
 </resources>

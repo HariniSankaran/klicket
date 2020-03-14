@@ -20,7 +20,7 @@
             android:text="Finish Project"
             android:textColor="#fffdd0"
             android:textSize="35dp"
-            android:textAlignment="center"></TextView>
+            android:textAlignment="center"/>
 
     </LinearLayout>
 

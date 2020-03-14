@@ -12,7 +12,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    private ImageButton submit_btn;
+    private Button submit_btn;
     private EditText username_et,password_et;
     String user,pswd;
 
@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        username_et= (EditText)findViewById(R.id.et_UserName);
-        password_et=(EditText)findViewById(R.id.et_Password);
-        submit_btn= (ImageButton) findViewById(R.id.btn_Submit);
+        username_et= findViewById(R.id.et_UserName);
+        password_et= findViewById(R.id.et_Password);
+        submit_btn= findViewById(R.id.btn_Submit);
         submit_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity {
                 pswd=password_et.getText().toString();
                 if (user.equals("admin")&&pswd.equals("admin"))
                 {
-                    Intent intent = new Intent(MainActivity.this,newpage.class);
+                    Intent intent = new Intent(MainActivity.this,NewPage.class);
                     MainActivity.this.startActivity(intent);
                 }else {
                     Toast.makeText(MainActivity.this, "Invalid credentials", Toast.LENGTH_LONG).show();

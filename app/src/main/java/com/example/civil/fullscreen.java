@@ -10,14 +10,13 @@ import android.view.View;
 import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class fullscreen {
+public class fullscreen extends AppCompatActivity {
 
 
     /**
      * An example full-screen activity that shows and hides the system UI (i.e.
      * status bar and navigation/system bar) with user interaction.
      */
-    public class FullscreenActivity extends AppCompatActivity {
         /**
          * Whether or not the system UI should be auto-hidden after
          * {@link #AUTO_HIDE_DELAY_MILLIS} milliseconds.
@@ -112,9 +111,9 @@ public class fullscreen {
             new Handler().postDelayed(new Runnable() {
                 @Override
                 public void run() {
-                    final Intent mainIntent =  new Intent(FullscreenActivity.this, MainActivity.class);
-                    FullscreenActivity.this.startActivity(mainIntent);
-                    FullscreenActivity.this.finish();
+                    final Intent mainIntent =  new Intent(fullscreen.this, MainActivity.class);
+                    fullscreen.this.startActivity(mainIntent);
+                    fullscreen.this.finish();
                 }
             },2000);
 
@@ -174,7 +173,6 @@ public class fullscreen {
             mHideHandler.removeCallbacks(mHideRunnable);
             mHideHandler.postDelayed(mHideRunnable, delayMillis);
         }
-    }
 }
 
 

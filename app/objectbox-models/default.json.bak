@@ -1,0 +1,100 @@
+{
+  "_note1": "KEEP THIS FILE! Check it into a version control system (VCS) like git.",
+  "_note2": "ObjectBox manages crucial IDs for your object model. See docs for details.",
+  "_note3": "If you have VCS merge conflicts, you must resolve them according to ObjectBox docs.",
+  "entities": [
+    {
+      "id": "1:5055632200546987036",
+      "lastPropertyId": "5:5702817834535119612",
+      "name": "ScheduleModel",
+      "properties": [
+        {
+          "id": "1:3328275672314670656",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:5803304261792725814",
+          "name": "startDate",
+          "type": 9
+        },
+        {
+          "id": "3:5508680266288603026",
+          "name": "endDate",
+          "type": 9
+        },
+        {
+          "id": "4:5623807498802944976",
+          "name": "detail",
+          "type": 9
+        },
+        {
+          "id": "5:5702817834535119612",
+          "name": "projectId",
+          "type": 6,
+          "flags": 4
+        }
+      ],
+      "relations": []
+    },
+    {
+      "id": "2:8528887012341107096",
+      "lastPropertyId": "7:7966576001684147800",
+      "name": "ProjectModel",
+      "properties": [
+        {
+          "id": "1:1885362557025940975",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:5339573286142056254",
+          "name": "ownerName",
+          "type": 9
+        },
+        {
+          "id": "3:3670723758490780123",
+          "name": "siteLocation",
+          "type": 9
+        },
+        {
+          "id": "4:878311909778757920",
+          "name": "emailId",
+          "type": 9
+        },
+        {
+          "id": "5:2032389619132997723",
+          "name": "mobileNumber",
+          "type": 9
+        },
+        {
+          "id": "6:3438508965753770887",
+          "name": "areaPlot",
+          "type": 9
+        },
+        {
+          "id": "7:7966576001684147800",
+          "name": "unit",
+          "type": 9
+        }
+      ],
+      "relations": []
+    }
+  ],
+  "lastEntityId": "2:8528887012341107096",
+  "lastIndexId": "0:0",
+  "lastRelationId": "0:0",
+  "lastSequenceId": "0:0",
+  "modelVersion": 5,
+  "modelVersionParserMinimum": 5,
+  "newUidPool": [
+    3980140657724044662
+  ],
+  "retiredEntityUids": [],
+  "retiredIndexUids": [],
+  "retiredPropertyUids": [],
+  "retiredRelationUids": [],
+  "version": 1
+}
