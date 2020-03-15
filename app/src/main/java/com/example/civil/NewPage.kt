@@ -49,7 +49,7 @@ class NewPage : AppCompatActivity(),IProjectSelected{
     }
 
     override fun selectedProject(projectId: Long) {
-        val intent = Intent(this, Schedule::class.java)
+        val intent = Intent(this, ViewReport::class.java)
         intent.putExtra(Constants.PROJECT_ID, projectId.toString())
         startActivity(intent)
     }

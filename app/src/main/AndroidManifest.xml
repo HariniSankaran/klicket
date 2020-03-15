@@ -11,16 +11,31 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
+        android:exported="false"
+        android:grantUriPermissions="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".finishproject"/>
-        <activity android:name=".onclickviewreport" />
-        <activity android:name=".viewreport" />
-        <activity android:name=".reportsubmit" />
 
-        <activity android:name=".report2" />
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="${applicationId}.provider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:name=".finishproject"/>
+        <activity android:name=".viewReportSummary" />
+        <activity android:name=".ViewReport"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ReportSubmit"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".Report2"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".Schedule"
             android:theme="@style/AppTheme.NoActionBar"/>
-        <activity android:name=".report" />
+        <activity android:name=".Report"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".NewProjectDetail"
             android:theme="@style/AppTheme.NoActionBar"/>
         <activity
@@ -39,5 +54,9 @@
             android:configChanges="orientation|keyboardHidden|screenSize"
             android:label="@string/login_activity" />
     </application>
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
 
 </manifest>

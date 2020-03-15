@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ebebeb"
-    tools:context=".onclickviewreport">
+    tools:context=".viewReportSummary">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -34,22 +34,17 @@
             android:layout_height="72dp"
             android:orientation="horizontal">
 
-            <EditText
-                android:id="@+id/editText4"
-                android:layout_width="300dp"
+            <Button
+                android:id="@+id/choseDate"
+                android:layout_width="match_parent"
                 android:layout_height="72dp"
                 android:background="@drawable/border"
                 android:ems="10"
-                android:hint="Please enter the date"
+                android:hint="Please chose the date"
                 android:textSize="20dp"
                 android:inputType="date"
                 android:textColorHint="#00227b" />
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="72dp"
-                android:text="Ok"
-                android:textSize="20dp"
-                android:textColor="#00227b"></Button>
+
         </LinearLayout>
 
     </LinearLayout>

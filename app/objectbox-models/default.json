@@ -81,9 +81,254 @@
         }
       ],
       "relations": []
+    },
+    {
+      "id": "3:3370715029915540870",
+      "lastPropertyId": "40:8226829806590695855",
+      "name": "ReportModel",
+      "properties": [
+        {
+          "id": "1:8317257878172694226",
+          "name": "id",
+          "type": 6,
+          "flags": 1
+        },
+        {
+          "id": "2:836272503972207166",
+          "name": "projectId",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "3:7472269825435038295",
+          "name": "svNo",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "4:585284871304826644",
+          "name": "snWage",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "5:8885098504141210834",
+          "name": "svTotal",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "6:7879936570068876304",
+          "name": "coolieCount",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "7:8589816326532004692",
+          "name": "Cooliewage",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "8:7022017883291959098",
+          "name": "CoolieTotal",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "9:7178454900900197617",
+          "name": "bbCount",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "10:1418879974789939102",
+          "name": "bbWage",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "11:4306964151500179306",
+          "name": "bbTotal",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "12:5404807807675183490",
+          "name": "eeCount",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "13:1843615987305957051",
+          "name": "eeWage",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "14:1545441773875415475",
+          "name": "eeTotal",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "15:992210907525992159",
+          "name": "carCount",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "16:4840620790501261020",
+          "name": "carWage",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "17:883533764323082376",
+          "name": "carTotal",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "18:2670358639579570223",
+          "name": "otherTotal",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "19:5053860095719226754",
+          "name": "sumTotal",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "20:6662628481307220954",
+          "name": "CementQty",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "21:5791937403572371268",
+          "name": "CementRate",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "22:760735434687021535",
+          "name": "CementTotal",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "23:5916515998848862047",
+          "name": "waterQty",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "24:3771913214625024356",
+          "name": "WaterRate",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "25:2896509373329336155",
+          "name": "WaterTotal",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "26:4095220205946968483",
+          "name": "RiQty",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "27:1890656728688291040",
+          "name": "RiRate",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "28:2927333993578444327",
+          "name": "RiTotal",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "29:8479219709718960207",
+          "name": "BrickQty",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "30:5076463792814108886",
+          "name": "BrickRate",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "31:8865211956836813690",
+          "name": "BrickTotal",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "32:3648597630851636378",
+          "name": "Other",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "33:574130404899393316",
+          "name": "Sum",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "34:861646525330492584",
+          "name": "GravelQty",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "35:1883486767427714052",
+          "name": "GravelRate",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "36:3901334974444249899",
+          "name": "GravelTotal",
+          "type": 8,
+          "flags": 4
+        },
+        {
+          "id": "37:1847926002690804697",
+          "name": "totalExpense",
+          "type": 9
+        },
+        {
+          "id": "38:5612907642924389207",
+          "name": "nextPlan",
+          "type": 9
+        },
+        {
+          "id": "39:891320526674518818",
+          "name": "reportDate",
+          "type": 9
+        },
+        {
+          "id": "40:8226829806590695855",
+          "name": "selectedDate",
+          "type": 6,
+          "flags": 4
+        }
+      ],
+      "relations": []
     }
   ],
-  "lastEntityId": "2:8528887012341107096",
+  "lastEntityId": "3:3370715029915540870",
   "lastIndexId": "0:0",
   "lastRelationId": "0:0",
   "lastSequenceId": "0:0",

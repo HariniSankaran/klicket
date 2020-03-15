@@ -1,9 +1,11 @@
 package com.example.civil;
 
 
+import android.content.Intent
 import android.os.Bundle;
 import android.view.View
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -20,6 +22,7 @@ class Schedule : AppCompatActivity(),IDateScheduler {
     lateinit var scheduleRecyclerView : RecyclerView
     private lateinit var  listAdapter : ScheduleListAdapter
     private lateinit var scheduleBox : Box<ScheduleModel>
+    private lateinit var submitButton : TextView
     private var projectId = 0L
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,7 +32,9 @@ class Schedule : AppCompatActivity(),IDateScheduler {
         scheduleBox = ObjectBox.boxStore.boxFor()
         addButton = findViewById(R.id.addButton)
         scheduleRecyclerView = findViewById(R.id.scheduleList)
+        submitButton = findViewById(R.id.submitButton)
         addButton.setOnClickListener(clickListener)
+        submitButton.setOnClickListener(clickListener)
     }
 
     override fun onResume() {
@@ -46,7 +51,12 @@ class Schedule : AppCompatActivity(),IDateScheduler {
     private val clickListener = View.OnClickListener { view ->
         when(view){
             addButton -> openScheduleCalendarDialog()
+            submitButton -> moveToProject()
         }
+    }
+
+    private fun moveToProject(){
+        startActivity(Intent(this,NewPage::class.java))
     }
 
     override fun newDateScheduler(schedule: ScheduleModel) {

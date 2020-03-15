@@ -5,23 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".report2">
+    tools:context=".Report2">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="vertical"
-        android:background="#002171">
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:orientation="vertical"-->
+<!--        android:background="#002171">-->
 
-        <TextView
-            android:id="@+id/et_report"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Report"
-            android:textSize="35dp"
-            android:textColor="#fffdd0"
-            android:textAlignment="center" />
-    </LinearLayout>
+<!--        <TextView-->
+<!--            android:id="@+id/et_report"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:text="Report"-->
+<!--            android:textSize="35dp"-->
+<!--            android:textColor="#fffdd0"-->
+<!--            android:textAlignment="center" />-->
+<!--    </LinearLayout>-->
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -135,7 +135,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_column="1"
+                    android:id="@+id/cementqty"
                     android:layout_margin="1dp"
+                    android:inputType="numberDecimal"
                     android:background="#FFFFFF"
                     android:gravity="center"
                     android:hint="bags"
@@ -145,7 +147,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_column="1"
+                    android:id="@+id/cementrate"
                     android:layout_margin="1dp"
+                    android:inputType="numberDecimal"
                     android:background="#FFFFFF"
                     android:gravity="center"
                     android:hint="/ bag"
@@ -156,6 +160,11 @@
                     android:layout_height="match_parent"
                     android:layout_column="2"
                     android:layout_margin="1dp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:cursorVisible="false"
+                    android:id="@+id/cementtotal"
                     android:background="#FFFFFF"
                     android:gravity="center"
                     android:hint="total"
@@ -186,6 +195,8 @@
                     android:layout_column="1"
                     android:layout_margin="1dp"
                     android:background="#FFFFFF"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/gravelqty"
                     android:gravity="center"
                     android:hint="m^3"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -194,7 +205,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_column="1"
+                    android:id="@+id/gravelrate"
                     android:layout_margin="1dp"
+                    android:inputType="numberDecimal"
                     android:background="#FFFFFF"
                     android:gravity="center"
                     android:hint="/ m^3"
@@ -205,6 +218,11 @@
                     android:layout_height="match_parent"
                     android:layout_column="2"
                     android:layout_margin="1dp"
+                    android:id="@+id/graveltotal"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:cursorVisible="false"
                     android:background="#FFFFFF"
                     android:gravity="center"
                     android:hint="total"
@@ -233,6 +251,8 @@
                     android:layout_height="match_parent"
                     android:layout_column="1"
                     android:layout_margin="1dp"
+                    android:id="@+id/waterqty"
+                    android:inputType="numberDecimal"
                     android:background="#FFFFFF"
                     android:gravity="center"
                     android:hint="L"
@@ -242,7 +262,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_column="1"
+                    android:id="@+id/waterrate"
                     android:layout_margin="1dp"
+                    android:inputType="numberDecimal"
                     android:background="#FFFFFF"
                     android:gravity="center"
                     android:hint="/ L"
@@ -253,6 +275,11 @@
                     android:layout_height="match_parent"
                     android:layout_column="2"
                     android:layout_margin="1dp"
+                    android:id="@+id/watertotal"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:cursorVisible="false"
                     android:background="#FFFFFF"
                     android:gravity="center"
                     android:hint="total"
@@ -281,6 +308,8 @@
                     android:layout_height="match_parent"
                     android:layout_column="1"
                     android:layout_margin="1dp"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/riqty"
                     android:background="#FFFFFF"
                     android:gravity="center"
                     android:hint="m^3"
@@ -292,6 +321,8 @@
                     android:layout_column="1"
                     android:layout_margin="1dp"
                     android:background="#FFFFFF"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/rirate"
                     android:gravity="center"
                     android:hint="/ m^3"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -302,6 +333,11 @@
                     android:layout_column="2"
                     android:layout_margin="1dp"
                     android:background="#FFFFFF"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:cursorVisible="false"
+                    android:id="@+id/ritotal"
                     android:gravity="center"
                     android:hint="total"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -330,6 +366,8 @@
                     android:layout_column="1"
                     android:layout_margin="1dp"
                     android:background="#FFFFFF"
+                    android:inputType="numberDecimal"
+                    android:id="@+id/brickqty"
                     android:gravity="center"
                     android:hint="m^3"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
@@ -338,7 +376,9 @@
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_column="1"
+                    android:id="@+id/brickrate"
                     android:layout_margin="1dp"
+                    android:inputType="numberDecimal"
                     android:background="#FFFFFF"
                     android:gravity="center"
                     android:hint="/ m^3"
@@ -349,6 +389,11 @@
                     android:layout_height="match_parent"
                     android:layout_column="2"
                     android:layout_margin="1dp"
+                    android:id="@+id/bricktotal"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:cursorVisible="false"
                     android:background="#FFFFFF"
                     android:gravity="center"
                     android:hint="total"
@@ -379,6 +424,8 @@
                     android:layout_height="match_parent"
                     android:layout_column="3"
                     android:layout_margin="1dp"
+                    android:id="@+id/othertotal"
+                    android:inputType="numberDecimal"
                     android:background="#ffffff"
                     android:gravity="center"
                     android:hint="total"
@@ -409,7 +456,12 @@
                     android:layout_column="3"
                     android:layout_margin="1dp"
                     android:background="#FFFFFF"
+                    android:id="@+id/totalsum"
                     android:gravity="center"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:inputType="none"
+                    android:cursorVisible="false"
                     android:hint="total"
                     android:textAppearance="?android:attr/textAppearanceLarge" />
             </TableRow>
@@ -426,7 +478,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/et_send"
+            android:id="@+id/nextButton"
             android:layout_width="match_parent"
             android:layout_height="50dp"
             android:layout_marginTop="0dp"

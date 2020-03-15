@@ -2,6 +2,10 @@ package com.example.civil.ObjectBox
 
 import android.content.Context
 import io.objectbox.BoxStore
+import io.objectbox.android.AndroidObjectBrowser
+
+
+
 
 object ObjectBox {
 

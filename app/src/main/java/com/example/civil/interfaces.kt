@@ -16,3 +16,7 @@ interface IDateScheduler{
 interface IProjectSelected{
      fun selectedProject(projectId : Long)
 }
+
+interface ISelectedDate{
+     fun selectedDate(date :Long)
+}

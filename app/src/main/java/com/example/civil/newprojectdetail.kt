@@ -33,8 +33,8 @@ class NewProjectDetail : AppCompatActivity() {
             if(ownerName.text.toString() != "" && siteLocation.text.toString() != "") {
                 val newProject = ProjectModel()
                 newProject.ownerName = ownerName.text.toString()
-                newProject.siteLocation = ownerName.text.toString()
-                newProject.emailId = ownerName.text.toString()
+                newProject.siteLocation = siteLocation.text.toString()
+                newProject.emailId = emailId.text.toString()
                 newProject.mobileNumber = mobileNumber.text.toString()
                 newProject.areaPlot = areaOfPlot.text.toString()
                 newProject.unit = unit.text.toString()
