@@ -1,490 +1,497 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Report">
-
-<!--    <LinearLayout-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="50dp"-->
-<!--        android:orientation="vertical"-->
-<!--        android:background="#002171">-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/et_report"-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="match_parent"-->
-<!--            android:text="Report"-->
-<!--            android:textSize="35dp"-->
-<!--            android:textColor="#fffdd0"-->
-<!--            android:textAlignment="center" />-->
-<!--    </LinearLayout>-->
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="620dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".Report">
 
-        <TableLayout
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="50dp"-->
+        <!--        android:orientation="vertical"-->
+        <!--        android:background="#002171">-->
 
-            android:layout_width="fill_parent"
-            android:layout_height="match_parent"
-            android:gravity="center"
-            android:stretchColumns="0,1,2">
+        <!--        <TextView-->
+        <!--            android:id="@+id/et_report"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent"-->
+        <!--            android:text="Report"-->
+        <!--            android:textSize="35dp"-->
+        <!--            android:textColor="#fffdd0"-->
+        <!--            android:textAlignment="center" />-->
+        <!--    </LinearLayout>-->
 
-            <LinearLayout
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="620dp"
+            android:orientation="vertical">
+
+            <TableLayout
+
                 android:layout_width="fill_parent"
-                android:layout_height="1dp"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#ffffff">
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:stretchColumns="0,1,2">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#ffffff">
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="64dp"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="#0d47a1">
+
+                        <TextView
+                            android:layout_height="32dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="start"
+                            android:text="LABOUR"
+                            android:textAlignment="viewStart"
+                            android:textColor="#fffdd0"
+                            android:textSize="25dp"/>
+
+                    </TableRow>
+                </LinearLayout>
+
+                <TableRow
+                    android:layout_width="411dp"
+                    android:layout_height="68dp"
+                    android:layout_margin="1dp"
+                    android:layout_weight="1"
+                    android:background="#000000">
+
+                    <TextView
+                        android:layout_width="105dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_margin="1dp"
+                        android:background="#5869B9"
+                        android:gravity="center"
+                        android:text=" ROLE "
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="33dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:background="#5869B9"
+                        android:gravity="center"
+                        android:text="NOs.,"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="45dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:layout_margin="1dp"
+                        android:background="#5869B9"
+                        android:gravity="center"
+                        android:text="WAGE"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="108dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:background="#5869B9"
+                        android:gravity="center"
+                        android:text="TOTAL"
+                        android:textAppearance="?android:attr/textAppearanceLarge"
+                        android:textStyle="bold" />
+
+                </TableRow>
 
                 <TableRow
                     android:layout_width="fill_parent"
-                    android:layout_height="64dp"
+                    android:layout_height="0dp"
                     android:layout_margin="1dp"
                     android:layout_weight="1"
-                    android:background="#0d47a1">
+                    android:background="#000000">
 
                     <TextView
-                        android:layout_height="32dp"
-                        android:layout_marginTop="5dp"
-                        android:gravity="start"
-                        android:text="LABOUR"
-                        android:textAlignment="viewStart"
-                        android:textColor="#fffdd0"
-                        android:textSize="25dp"></TextView>
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_margin="1dp"
+                        android:background="#A29F9F"
+                        android:gravity="center"
+                        android:text="SUPERVISIOR"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
 
+                    <EditText
+                        android:id="@+id/svno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:inputType="number"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:hint="count"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:id="@+id/svwage"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:inputType="numberDecimal"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:hint="wage"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:id="@+id/svtotal"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:inputType="none"
+                        android:cursorVisible="false"
+                        android:layout_column="2"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:hint="total"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
                 </TableRow>
-            </LinearLayout>
 
-            <TableRow
-                android:layout_width="411dp"
-                android:layout_height="68dp"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#000000">
 
-                <TextView
-                    android:layout_width="105dp"
-                    android:layout_height="match_parent"
-                    android:layout_column="0"
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
                     android:layout_margin="1dp"
-                    android:background="#5869B9"
-                    android:gravity="center"
-                    android:text=" ROLE "
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textStyle="bold" />
+                    android:layout_weight="1"
+                    android:background="#000000">
 
-                <TextView
-                    android:layout_width="33dp"
-                    android:layout_height="match_parent"
-                    android:layout_column="1"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_margin="1dp"
+                        android:background="#A29F9F"
+                        android:gravity="center"
+                        android:text="COOLIE"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:id="@+id/coolieno"
+                        android:inputType="number"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:hint="count"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:id="@+id/cooliewage"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        android:hint="wage"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:layout_margin="1dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:inputType="none"
+                        android:cursorVisible="false"
+                        android:id="@+id/coolietotal"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:hint="total"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
                     android:layout_margin="1dp"
-                    android:background="#5869B9"
-                    android:gravity="center"
-                    android:text="NOs.,"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textStyle="bold" />
+                    android:layout_weight="1"
+                    android:background="#000000">
 
-                <TextView
-                    android:layout_width="45dp"
-                    android:layout_height="match_parent"
-                    android:layout_column="2"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_margin="1dp"
+                        android:background="#A29F9F"
+                        android:gravity="center"
+                        android:text="BAR BENDER"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:id="@+id/bbcount"
+                        android:layout_margin="1dp"
+                        android:inputType="number"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:hint="count"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/bbwage"
+                        android:gravity="center"
+                        android:hint="wage"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:layout_margin="1dp"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:inputType="none"
+                        android:cursorVisible="false"
+                        android:id="@+id/bbtotal"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:hint="total"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
                     android:layout_margin="1dp"
-                    android:background="#5869B9"
-                    android:gravity="center"
-                    android:text="WAGE"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textStyle="bold" />
+                    android:layout_weight="1"
+                    android:background="#000000">
 
-                <TextView
-                    android:layout_width="108dp"
-                    android:layout_height="match_parent"
-                    android:layout_column="1"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_margin="1dp"
+                        android:background="#A29F9F"
+                        android:gravity="center"
+                        android:text="ELECTRICIAN"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:inputType="number"
+                        android:id="@+id/eecount"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:hint="count"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        android:id="@+id/eewage"
+                        android:hint="wage"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:layout_width="96dp"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:inputType="none"
+                        android:cursorVisible="false"
+                        android:id="@+id/eetotal"
+                        android:gravity="center"
+                        android:hint="total"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
                     android:layout_margin="1dp"
-                    android:background="#5869B9"
-                    android:gravity="center"
-                    android:text="TOTAL"
-                    android:textAppearance="?android:attr/textAppearanceLarge"
-                    android:textStyle="bold" />
+                    android:layout_weight="1"
+                    android:background="#000000">
 
-            </TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_margin="1dp"
+                        android:background="#A29F9F"
+                        android:gravity="center"
+                        android:text="CARPENTER"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
 
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#000000">
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:inputType="number"
+                        android:id="@+id/carcount"
+                        android:gravity="center"
+                        android:hint="count"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_column="0"
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="1"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:inputType="numberDecimal"
+                        android:id="@+id/carwage"
+                        android:gravity="center"
+                        android:hint="wage"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="2"
+                        android:layout_margin="1dp"
+                        android:background="#FFFFFF"
+                        android:id="@+id/cartotal"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:inputType="none"
+                        android:cursorVisible="false"
+                        android:gravity="center"
+                        android:hint="total"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
                     android:layout_margin="1dp"
-                    android:background="#A29F9F"
-                    android:gravity="center"
-                    android:text="SUPERVISIOR"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                    android:layout_weight="1"
+                    android:background="#FFFFFF">
 
-                <EditText
-                    android:id="@+id/svno"
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_column="1"
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_margin="1dp"
+                        android:background="#A29F9F"
+                        android:gravity="center"
+                        android:text="OTHER"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+                    <EditText
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="3"
+                        android:layout_margin="1dp"
+                        android:id="@+id/othertotal"
+                        android:background="#FFFFFF"
+                        android:inputType="numberDecimal"
+                        android:gravity="center"
+                        android:hint="total"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
+
+
+
+                <TableRow
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
                     android:layout_margin="1dp"
-                    android:inputType="number"
-                    android:background="#FFFFFF"
-                    android:gravity="center"
-                    android:hint="count"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
+                    android:layout_weight="1"
+                    android:background="#FFFFFF">
 
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:id="@+id/svwage"
-                    android:layout_height="match_parent"
-                    android:layout_column="1"
-                    android:layout_margin="1dp"
-                    android:inputType="numberDecimal"
-                    android:background="#FFFFFF"
-                    android:gravity="center"
-                    android:hint="wage"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:id="@+id/svtotal"
-                    android:clickable="false"
-                    android:focusable="false"
-                    android:inputType="none"
-                    android:cursorVisible="false"
-                    android:layout_column="2"
-                    android:layout_margin="1dp"
-                    android:background="#FFFFFF"
-                    android:gravity="center"
-                    android:hint="total"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-            </TableRow>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_column="0"
+                        android:layout_margin="1dp"
+                        android:background="#A29F9F"
+                        android:gravity="center"
+                        android:text="SUM"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
 
 
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#000000">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_column="3"
+                        android:layout_margin="1dp"
+                        android:id="@+id/sumtotal"
+                        android:background="#FFFFFF"
+                        android:gravity="center"
+                        android:hint="total"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:inputType="none"
+                        android:textAppearance="?android:attr/textAppearanceLarge" />
+                </TableRow>
 
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_margin="1dp"
-                    android:background="#A29F9F"
-                    android:gravity="center"
-                    android:text="COOLIE"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </TableLayout>
 
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_column="1"
-                    android:layout_margin="1dp"
-                    android:id="@+id/coolieno"
-                    android:inputType="number"
-                    android:background="#FFFFFF"
-                    android:gravity="center"
-                    android:hint="count"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
+        </LinearLayout>
 
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_column="1"
-                    android:id="@+id/cooliewage"
-                    android:layout_margin="1dp"
-                    android:background="#FFFFFF"
-                    android:inputType="numberDecimal"
-                    android:gravity="center"
-                    android:hint="wage"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_column="2"
-                    android:layout_margin="1dp"
-                    android:clickable="false"
-                    android:focusable="false"
-                    android:inputType="none"
-                    android:cursorVisible="false"
-                    android:id="@+id/coolietotal"
-                    android:background="#FFFFFF"
-                    android:gravity="center"
-                    android:hint="total"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#000000">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_margin="1dp"
-                    android:background="#A29F9F"
-                    android:gravity="center"
-                    android:text="BAR BENDER"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_column="1"
-                    android:id="@+id/bbcount"
-                    android:layout_margin="1dp"
-                    android:inputType="number"
-                    android:background="#FFFFFF"
-                    android:gravity="center"
-                    android:hint="count"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_column="1"
-                    android:layout_margin="1dp"
-                    android:background="#FFFFFF"
-                    android:inputType="numberDecimal"
-                    android:id="@+id/bbwage"
-                    android:gravity="center"
-                    android:hint="wage"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_column="2"
-                    android:layout_margin="1dp"
-                    android:clickable="false"
-                    android:focusable="false"
-                    android:inputType="none"
-                    android:cursorVisible="false"
-                    android:id="@+id/bbtotal"
-                    android:background="#FFFFFF"
-                    android:gravity="center"
-                    android:hint="total"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#000000">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_margin="1dp"
-                    android:background="#A29F9F"
-                    android:gravity="center"
-                    android:text="ELECTRICIAN"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_column="1"
-                    android:layout_margin="1dp"
-                    android:inputType="number"
-                    android:id="@+id/eecount"
-                    android:background="#FFFFFF"
-                    android:gravity="center"
-                    android:hint="count"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_column="1"
-                    android:layout_margin="1dp"
-                    android:background="#FFFFFF"
-                    android:inputType="numberDecimal"
-                    android:gravity="center"
-                    android:id="@+id/eewage"
-                    android:hint="wage"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                <EditText
-                    android:layout_width="96dp"
-                    android:layout_height="match_parent"
-                    android:layout_column="2"
-                    android:layout_margin="1dp"
-                    android:background="#FFFFFF"
-                    android:clickable="false"
-                    android:focusable="false"
-                    android:inputType="none"
-                    android:cursorVisible="false"
-                    android:id="@+id/eetotal"
-                    android:gravity="center"
-                    android:hint="total"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#000000">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_margin="1dp"
-                    android:background="#A29F9F"
-                    android:gravity="center"
-                    android:text="CARPENTER"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_column="1"
-                    android:layout_margin="1dp"
-                    android:background="#FFFFFF"
-                    android:inputType="number"
-                    android:id="@+id/carcount"
-                    android:gravity="center"
-                    android:hint="count"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_column="1"
-                    android:layout_margin="1dp"
-                    android:background="#FFFFFF"
-                    android:inputType="numberDecimal"
-                    android:id="@+id/carwage"
-                    android:gravity="center"
-                    android:hint="wage"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_column="2"
-                    android:layout_margin="1dp"
-                    android:background="#FFFFFF"
-                    android:id="@+id/cartotal"
-                    android:clickable="false"
-                    android:focusable="false"
-                    android:inputType="none"
-                    android:cursorVisible="false"
-                    android:gravity="center"
-                    android:hint="total"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-            </TableRow>
-
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#FFFFFF">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_margin="1dp"
-                    android:background="#A29F9F"
-                    android:gravity="center"
-                    android:text="OTHER"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-
-
-                <EditText
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_column="3"
-                    android:layout_margin="1dp"
-                    android:id="@+id/othertotal"
-                    android:background="#FFFFFF"
-                    android:inputType="numberDecimal"
-                    android:gravity="center"
-                    android:hint="total"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-            </TableRow>
-
-
-
-            <TableRow
-                android:layout_width="fill_parent"
-                android:layout_height="0dp"
-                android:layout_margin="1dp"
-                android:layout_weight="1"
-                android:background="#FFFFFF">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_column="0"
-                    android:layout_margin="1dp"
-                    android:background="#A29F9F"
-                    android:gravity="center"
-                    android:text="SUM"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:layout_column="3"
-                    android:layout_margin="1dp"
-                    android:id="@+id/sumtotal"
-                    android:background="#FFFFFF"
-                    android:gravity="center"
-                    android:hint="total"
-                    android:clickable="false"
-                    android:focusable="false"
-                    android:inputType="none"
-                    android:textAppearance="?android:attr/textAppearanceLarge" />
-            </TableRow>
-
-        </TableLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginTop="0dp"
-        android:background="#00227b"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/nextButton"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="50dp"
+            android:layout_height="60dp"
             android:layout_marginTop="0dp"
-            android:text="NEXT"
-            android:textAlignment="center"
-            android:textColor="#fffdd0"
-            android:textSize="45dp" />
+            android:background="#00227b"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nextButton"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="0dp"
+                android:text="NEXT"
+                android:textAlignment="center"
+                android:textColor="#fffdd0"
+                android:textSize="45dp" />
+        </LinearLayout>
     </LinearLayout>
-</LinearLayout>
+</ScrollView>

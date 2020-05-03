@@ -84,7 +84,7 @@
     },
     {
       "id": "3:3370715029915540870",
-      "lastPropertyId": "39:891320526674518818",
+      "lastPropertyId": "41:5260487909035488135",
       "name": "ReportModel",
       "properties": [
         {
@@ -316,6 +316,17 @@
         {
           "id": "39:891320526674518818",
           "name": "reportDate",
+          "type": 9
+        },
+        {
+          "id": "40:8226829806590695855",
+          "name": "selectedDate",
+          "type": 6,
+          "flags": 4
+        },
+        {
+          "id": "41:5260487909035488135",
+          "name": "imageLocalPath",
           "type": 9
         }
       ],

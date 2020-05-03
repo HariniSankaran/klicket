@@ -1,79 +1,106 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="#ebebeb"
-    tools:context=".finishproject">
+    android:orientation="vertical">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/title"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#002171"
-        android:orientation="vertical">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="Finish Project"
-            android:textColor="#fffdd0"
-            android:textSize="35dp"
-            android:textAlignment="center"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="610dp"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/textView4"
-            android:layout_width="match_parent"
-            android:layout_height="66dp"
-            android:hint="Value estimated before work"
-            android:textColorHint="#00227b"
-            android:textSize="25dp"
-            android:layout_marginTop="10dp"/>
-
-        <TextView
-            android:id="@+id/textView5"
-            android:layout_width="match_parent"
-            android:layout_height="67dp"
-            android:hint="Value from app"
-            android:textSize="25dp"
-            android:textColorHint="#00227b"
-            android:layout_marginTop="10dp"/>
-
-        <EditText
-            android:id="@+id/editText5"
-            android:layout_width="match_parent"
-            android:layout_height="132dp"
-            android:ems="10"
-            android:gravity="start|top"
-            android:hint="REVIEW"
-            android:textSize="25dp"
-            android:textColorHint="#00227b"
-            android:inputType="textMultiLine" />
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:background="#00227b"
-        android:orientation="vertical">
+        android:text="Finish Project"
+        android:textColor="#fffdd0"
+        android:textSize="35sp"
+        android:textAlignment="center"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:text="COMPLETED"
-            android:textColor="#fffdd0"
-            android:textSize="40dp"
-            android:textAlignment="center"
-            android:layout_marginTop="8dp"></TextView>
+    <TextView
+        android:id="@+id/valueBeforeTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/title"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Value estimated before work"
+        android:textColorHint="#00227b"
+        android:textSize="25sp" />
 
-    </LinearLayout>
-</LinearLayout>
+    <EditText
+        android:id="@+id/valueBefore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="value estimated"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/valueBeforeTitle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <TextView
+        android:id="@+id/appValueTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/valueBefore"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="Value from app"
+        android:textColorHint="#00227b"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/appValue"
+        android:text="value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="13dp"
+        android:layout_marginStart="13dp"
+        app:layout_constraintTop_toBottomOf="@id/appValueTitle"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/reviewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Review"
+        android:textColor="#00227b"
+        android:textSize="25sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/appValue" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/reviewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:hint="review ( optional) "
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"/>
+
+
+    <Button
+        android:id="@+id/completed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00227b"
+        android:text="COMPLETED"
+        android:textColor="#fffdd0"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

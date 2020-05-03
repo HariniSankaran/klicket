@@ -25,7 +25,13 @@ class ViewReport : AppCompatActivity() {
         }
 
         viewReport.setOnClickListener {
-            val intent = Intent(this,viewReportSummary::class.java)
+            val intent = Intent(this,ViewReportSummary::class.java)
+            intent.putExtra(Constants.PROJECT_ID, projectId.toString())
+            startActivity(intent)
+        }
+
+        finishProject.setOnClickListener {
+            val intent = Intent(this,FinishProject::class.java)
             intent.putExtra(Constants.PROJECT_ID, projectId.toString())
             startActivity(intent)
         }

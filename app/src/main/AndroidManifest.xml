@@ -3,6 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.civil">
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+
     <application
         android:name=".KlicketApplication"
         android:allowBackup="true"
@@ -11,7 +17,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
-        android:exported="false"
+        android:exported="true"
+        android:requestLegacyExternalStorage="true"
         android:grantUriPermissions="true"
         tools:ignore="GoogleAppIndexingWarning">
 
@@ -24,8 +31,10 @@
                 android:name="android.support.FILE_PROVIDER_PATHS"
                 android:resource="@xml/file_paths"/>
         </provider>
-        <activity android:name=".finishproject"/>
-        <activity android:name=".viewReportSummary" />
+        <activity android:name=".FinishProject"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ViewReportSummary"
+            android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".ViewReport"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".ReportSubmit"
@@ -55,8 +64,6 @@
             android:label="@string/login_activity" />
     </application>
 
-    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
-    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+
 
 </manifest>

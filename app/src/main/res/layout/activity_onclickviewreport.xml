@@ -1,68 +1,68 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="#ebebeb"
-    tools:context=".viewReportSummary">
+    tools:context=".ViewReportSummary">
 
-    <LinearLayout
+    <TextView
+        android:id="@+id/viewReportTitle"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="#00227b"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:text="View Report"
+        android:textAlignment="center"
+        android:textColor="#fffdd0"
+        android:textSize="35sp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:text="View Report"
-            android:textAlignment="center"
-            android:textColor="#fffdd0"
-            android:textSize="35dp"></TextView>
-
-    </LinearLayout>
-
-    <LinearLayout
+    <Button
+        android:id="@+id/choseDate"
         android:layout_width="match_parent"
-        android:layout_height="600dp"
-        android:orientation="vertical">
+        android:layout_height="wrap_content"
+        android:background="@drawable/border"
+        android:ems="10"
+        android:hint="Please chose the date"
+        android:textSize="20sp"
+        android:inputType="date"
+        android:textColorHint="#00227b"
+        app:layout_constraintTop_toBottomOf="@+id/viewReportTitle"/>
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="72dp"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/choseDate"
-                android:layout_width="match_parent"
-                android:layout_height="72dp"
-                android:background="@drawable/border"
-                android:ems="10"
-                android:hint="Please chose the date"
-                android:textSize="20dp"
-                android:inputType="date"
-                android:textColorHint="#00227b" />
-
-        </LinearLayout>
-
-    </LinearLayout>
-
-    <LinearLayout
+    <TextView
+        android:id="@+id/doneButton"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:background="#00227b">
+        android:layout_height="wrap_content"
+        android:text="DONE"
+        android:textSize="40sp"
+        android:textColor="#fffdd0"
+        android:textAlignment="center"
+        android:layout_marginTop="15dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"/>
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="45dp"
-            android:text="DONE"
-            android:textSize="40dp"
-            android:textColor="#fffdd0"
-            android:textAlignment="center"
-            android:layout_marginTop="15dp"></TextView>
+    <ListView
+        android:id="@+id/viewReportList"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/choseDate"
+        app:layout_constraintBottom_toTopOf="@+id/doneButton"/>
 
-    </LinearLayout>
-</LinearLayout>
+    <TextView
+        android:text="No Reports Found"
+        android:id="@+id/noReports"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:visibility="gone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/choseDate"
+        app:layout_constraintBottom_toTopOf="@+id/doneButton"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

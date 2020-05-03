@@ -19,7 +19,8 @@ data class ProjectModel(@Id var id : Long = 0L,
                         var emailId : String? = "",
                         @Uid(3980140657724044662L) var mobileNumber : String? = "",
                         var areaPlot : String? = "",
-                        var unit : String? = "")
+                        var unit : String? = "",
+                        var pdfName : String? = "")
 
 @Entity
 data class ReportModel(@Id var id : Long = 0L,
@@ -73,6 +74,7 @@ data class ReportModel(@Id var id : Long = 0L,
                        var totalExpense : String = "",
                        var nextPlan : String = "",
                        var reportDate : String = "",
-                       var selectedDate : Long = 0L
+                       var selectedDate : Long = 0L,
+                       var imageLocalPath : String? = ""
 
 )

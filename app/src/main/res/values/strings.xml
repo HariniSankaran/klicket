@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">civil</string>
+    <string name="app_name">Klicket</string>
 
     <string name="title_activity_fullscreen">FullscreenActivity</string>
     <string name="dummy_button">Dummy Button</string>
@@ -7,4 +7,5 @@
     <string name="login_activity">Login</string>
     <string name="title_activity_newpage">newpage</string>
     <string name="select_date">Select a Date</string>
+    <string name="grant_access">Grant permission to capture the image</string>
 </resources>

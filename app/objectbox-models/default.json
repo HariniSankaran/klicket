@@ -40,7 +40,7 @@
     },
     {
       "id": "2:8528887012341107096",
-      "lastPropertyId": "8:3980140657724044662",
+      "lastPropertyId": "9:3932313549215591563",
       "name": "ProjectModel",
       "properties": [
         {
@@ -78,13 +78,18 @@
           "id": "8:3980140657724044662",
           "name": "mobileNumber",
           "type": 9
+        },
+        {
+          "id": "9:3932313549215591563",
+          "name": "pdfName",
+          "type": 9
         }
       ],
       "relations": []
     },
     {
       "id": "3:3370715029915540870",
-      "lastPropertyId": "40:8226829806590695855",
+      "lastPropertyId": "41:5260487909035488135",
       "name": "ReportModel",
       "properties": [
         {
@@ -323,6 +328,11 @@
           "name": "selectedDate",
           "type": 6,
           "flags": 4
+        },
+        {
+          "id": "41:5260487909035488135",
+          "name": "imageLocalPath",
+          "type": 9
         }
       ],
       "relations": []
